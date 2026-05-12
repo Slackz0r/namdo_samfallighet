@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import SiteContainer from "@/components/site-container";
+
+export const metadata: Metadata = {
+  title: "Stadgar",
+  description: "Stadgar för Nordöstra Nämdös samfällighetsförening.",
+};
 
 export default function StatutesPage() {
   return (
@@ -6,11 +12,11 @@ export default function StatutesPage() {
       <SiteContainer>
         <article aria-labelledby="stadgar-heading" className="py-10 md:py-16">
           <header className="mb-10 max-w-3xl">
-            <p className="mb-2 text-sm font-medium uppercase tracking-wide text-muted-foreground">
+            <p className="mb-2 text-sm font-medium uppercase text-muted-foreground">
               Nordöstra Nämdös samfällighetsförening
             </p>
 
-            <h1 id="stadgar-heading" className="text-4xl font-semibold tracking-tight md:text-5xl">
+            <h1 id="stadgar-heading" className="text-4xl font-semibold leading-tight md:text-5xl">
               Stadgar
             </h1>
 
@@ -38,7 +44,7 @@ export default function StatutesPage() {
             </p>
           </header>
 
-          <div className="space-y-10">
+          <div className="max-w-4xl space-y-10">
             <section aria-labelledby="firma-heading">
               <h2 id="firma-heading" className="text-2xl font-semibold">
                 § 1 Firma
@@ -350,14 +356,14 @@ export default function StatutesPage() {
 
           <aside
             aria-labelledby="kommentarer-heading"
-            className="mt-16 rounded-2xl border border-border bg-surface-muted p-6 md:p-8"
+            className="mt-16 max-w-4xl rounded-xl border border-border bg-surface-muted p-6 md:p-8"
           >
             <header className="max-w-3xl">
-              <p className="text-sm font-medium uppercase tracking-wide text-muted-foreground">
+              <p className="text-sm font-medium uppercase text-muted-foreground">
                 Bilaga
               </p>
 
-              <h2 id="kommentarer-heading" className="mt-2 text-3xl font-semibold tracking-tight">
+              <h2 id="kommentarer-heading" className="mt-2 text-3xl font-semibold leading-tight">
                 Kommentar till stadgarna
               </h2>
 
@@ -731,7 +737,7 @@ export default function StatutesPage() {
             </div>
           </aside>
 
-          <footer className="mt-12 border-t border-border pt-6 text-sm text-muted-foreground">
+          <footer className="mt-12 max-w-4xl border-t border-border pt-6 text-sm text-muted-foreground">
             <p>Dessa stadgar har antagits vid sammanträde enligt datum på första sidan.</p>
           </footer>
         </article>
