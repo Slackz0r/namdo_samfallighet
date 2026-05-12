@@ -8,7 +8,7 @@ import { bridgeProject } from "@/content/projects";
 export const metadata: Metadata = {
   title: "Aktuella projekt",
   description:
-    "Information om arbetet med renovering och finansiering av Nämdö Böte trafikbrygga.",
+    "Statusrapport våren 2026 om renoveringen av Nämdö Böte trafikbrygga.",
 };
 
 export default function ProjectsPage() {
@@ -37,10 +37,29 @@ export default function ProjectsPage() {
               aria-label="Projektinformation"
               className="max-w-3xl space-y-6 rounded-xl border border-border bg-surface p-6 shadow-sm md:p-8"
             >
-              {bridgeProject.paragraphs.map((paragraph) => (
-                <p key={paragraph} className="leading-8 text-muted-foreground">
-                  {paragraph}
-                </p>
+              {bridgeProject.sections.map(({ heading, paragraphs, items }) => (
+                <section key={heading} aria-labelledby={`${heading.toLowerCase().replaceAll(" ", "-")}-heading`}>
+                  <h2
+                    id={`${heading.toLowerCase().replaceAll(" ", "-")}-heading`}
+                    className="text-2xl font-semibold leading-tight text-foreground"
+                  >
+                    {heading}
+                  </h2>
+
+                  {paragraphs?.map((paragraph) => (
+                    <p key={paragraph} className="mt-4 leading-8 text-muted-foreground">
+                      {paragraph}
+                    </p>
+                  ))}
+
+                  {items ? (
+                    <ul className="mt-4 list-disc space-y-2 pl-5 leading-7 text-muted-foreground">
+                      {items.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </section>
               ))}
             </section>
 

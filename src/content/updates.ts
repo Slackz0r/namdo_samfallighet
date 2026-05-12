@@ -7,10 +7,10 @@ export type Update = {
 
 export const updates: Update[] = [
   {
-    title: "Information om Nämdö Böte brygga",
-    date: "2025-05-08",
+    title: "Renovering av Nämdö Böte trafikbrygga",
+    date: "2026-04-20",
     href: "/projects",
-    summary: "Projektgruppen arbetar vidare med teknisk lösning, finansiering och anbudsunderlag.",
+    summary: "Statusrapport våren 2026 om teknisk lösning, finansiering och förrättning.",
   },
   {
     title: "Information om sophämtning",
