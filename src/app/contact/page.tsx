@@ -7,7 +7,7 @@ import SiteContainer from "@/components/site-container";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontaktinformation för medlemmar och fastighetsägare i Nordöstra Nämdö Samfällighetsförening.",
+    "Kontakt- och faktureringsuppgifter för Nordöstra Nämdö Samfällighetsförening.",
 };
 
 export default function ContactPage() {
@@ -30,9 +30,9 @@ export default function ContactPage() {
                 För medlemmar och fastighetsägare
               </h2>
               <p className="mt-4 leading-8 text-muted-foreground">
-                Använd de kontaktvägar som anges i senaste kallelse, protokoll eller utskick från
-                styrelsen. På så sätt hålls kontaktuppgifterna korrekta utan att webbplatsen behöver
-                ett administrativt system.
+                För att värna styrelsens privata kontaktuppgifter publiceras inte personliga
+                telefonnummer eller e-postadresser på webbplatsen. Använd i stället de kontaktvägar
+                som anges i senaste kallelse, protokoll eller utskick från styrelsen.
               </p>
 
               <dl className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -45,6 +45,42 @@ export default function ContactPage() {
                   <dd className="mt-1 font-semibold">Värmdö</dd>
                 </div>
               </dl>
+
+              <section aria-labelledby="billing-heading" className="mt-8 border-t border-border pt-8">
+                <h3 id="billing-heading" className="text-xl font-semibold leading-tight">
+                  Fakturering
+                </h3>
+
+                <dl className="mt-5 space-y-5">
+                  <div>
+                    <dt className="text-sm font-medium text-muted-foreground">Kundnummer</dt>
+                    <dd className="mt-1 font-semibold">809991</dd>
+                  </div>
+
+                  <div>
+                    <dt className="text-sm font-medium text-muted-foreground">Postadress</dt>
+                    <dd className="mt-1">
+                      <address className="not-italic leading-7">
+                        <span className="block">Nordöstra Nämdö Samfällighetsförening</span>
+                        <span className="block">FE 231</span>
+                        <span className="block">831 88 Östersund</span>
+                      </address>
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt className="text-sm font-medium text-muted-foreground">Faktureringsadress</dt>
+                    <dd className="mt-1">
+                      <a
+                        className="font-semibold text-primary hover:underline"
+                        href="mailto:simpleko@ironmountain.com"
+                      >
+                        simpleko@ironmountain.com
+                      </a>
+                    </dd>
+                  </div>
+                </dl>
+              </section>
             </section>
 
             <aside aria-labelledby="quick-links-heading" className="space-y-4">
