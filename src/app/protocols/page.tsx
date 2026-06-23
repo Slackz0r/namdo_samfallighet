@@ -8,7 +8,7 @@ import { formatDate } from "@/utils/dateUtils";
 export const metadata: Metadata = {
   title: "Protokoll",
   description:
-    "Stämmoprotokoll och möteshandlingar för Nordöstra Nämdö Samfällighetsförening.",
+    "Stämmoprotokoll och möteshandlingar för Nordöstra Nämdös Samfällighetsförening.",
 };
 
 export default function ProtocolsPage() {

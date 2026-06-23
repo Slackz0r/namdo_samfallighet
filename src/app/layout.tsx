@@ -16,16 +16,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Nordöstra Nämdö Samfällighetsförening",
-    template: "%s | Nordöstra Nämdö Samfällighetsförening",
+    default: "Nordöstra Nämdös Samfällighetsförening",
+    template: "%s | Nordöstra Nämdös Samfällighetsförening",
   },
   description:
-    "Information om vägar, bryggor, stadgar och aktuella projekt för Nordöstra Nämdö Samfällighetsförening.",
-  applicationName: "Nordöstra Nämdö Samfällighetsförening",
+    "Information om vägar, bryggor, stadgar och aktuella projekt för Nordöstra Nämdös Samfällighetsförening.",
+  applicationName: "Nordöstra Nämdös Samfällighetsförening",
   openGraph: {
-    title: "Nordöstra Nämdö Samfällighetsförening",
+    title: "Nordöstra Nämdös Samfällighetsförening",
     description:
-      "Information om vägar, bryggor, stadgar och aktuella projekt för Nordöstra Nämdö Samfällighetsförening.",
+      "Information om vägar, bryggor, stadgar och aktuella projekt för Nordöstra Nämdös Samfällighetsförening.",
     locale: "sv_SE",
     type: "website",
   },

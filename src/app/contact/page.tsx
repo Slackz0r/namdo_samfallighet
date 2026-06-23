@@ -7,7 +7,7 @@ import SiteContainer from "@/components/site-container";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontakt- och faktureringsuppgifter för Nordöstra Nämdö Samfällighetsförening.",
+    "Kontakt- och faktureringsuppgifter för Nordöstra Nämdös Samfällighetsförening.",
 };
 
 export default function ContactPage() {
@@ -61,7 +61,7 @@ export default function ContactPage() {
                     <dt className="text-sm font-medium text-muted-foreground">Postadress</dt>
                     <dd className="mt-1">
                       <address className="not-italic leading-7">
-                        <span className="block">Nordöstra Nämdö Samfällighetsförening</span>
+                        <span className="block">Nordöstra Nämdös Samfällighetsförening</span>
                         <span className="block">FE 231</span>
                         <span className="block">831 88 Östersund</span>
                       </address>

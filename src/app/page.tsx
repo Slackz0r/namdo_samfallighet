@@ -9,7 +9,7 @@ import { formatDate } from "@/utils/dateUtils";
 export const metadata: Metadata = {
   title: "Start",
   description:
-    "Information för medlemmar och fastighetsägare i Nordöstra Nämdö Samfällighetsförening.",
+    "Information för medlemmar och fastighetsägare i Nordöstra Nämdös Samfällighetsförening.",
 };
 
 const managedAssets = [
@@ -41,7 +41,7 @@ export default function HomePage() {
               Samfällighetsförening på norra Nämdö
             </p>
             <h1 className="mt-4 text-3xl font-semibold leading-tight sm:text-5xl md:text-6xl">
-              <span className="block">Nordöstra Nämdö</span>
+              <span className="block">Nordöstra Nämdös</span>
               <span className="block">Samfällighetsförening</span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-primary-foreground/90">
@@ -73,7 +73,7 @@ export default function HomePage() {
             <h2 className="text-3xl font-semibold leading-tight">Om föreningen</h2>
             <div className="mt-5 space-y-5 text-base leading-8 text-muted-foreground">
               <p>
-                Nordöstra Nämdö samfällighetsförening etablerades vid en förrättning av
+                Nordöstra Nämdös samfällighetsförening etablerades vid en förrättning av
                 Lantmäteriet 1985. Som fastighetsägare är man obligatoriskt ansluten till
                 föreningen och omfattas av föreningens stadgar och årsstämmobeslut.
               </p>

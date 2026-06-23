@@ -7,7 +7,7 @@ import { residentInformation } from "@/content/resident-information";
 export const metadata: Metadata = {
   title: "Information för boende",
   description:
-    "Praktisk information om sophämtning, grovavfall och boendefrågor för Nordöstra Nämdö Samfällighetsförening.",
+    "Praktisk information om sophämtning, grovavfall och boendefrågor för Nordöstra Nämdös Samfällighetsförening.",
 };
 
 export default function InformationPage() {

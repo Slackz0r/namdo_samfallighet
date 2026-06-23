@@ -29,7 +29,7 @@ export const bridgeProject = {
     {
       heading: "Bakgrund",
       paragraphs: [
-        "Nordöstra Nämdö Samfällighetsförening förvaltar Nämdö Böte och Östanviks trafikbryggor samt vissa vägavsnitt. Nämdö Böte brygga byggdes i betong 1981. Den vilar i sin tur på en drygt 70 år gammal stenkista, som vittrat sönder i vissa delar. Betongplattan har därför börjat sjunka, om än sakta.",
+        "Nordöstra Nämdös Samfällighetsförening förvaltar Nämdö Böte och Östanviks trafikbryggor samt vissa vägavsnitt. Nämdö Böte brygga byggdes i betong 1981. Den vilar i sin tur på en drygt 70 år gammal stenkista, som vittrat sönder i vissa delar. Betongplattan har därför börjat sjunka, om än sakta.",
         "Belastningen på bryggan har ökat genom åren. De bogtilläggande fartyg som Waxholmsbolaget använde på 80-talet hade cirka 50 tons deplacement. De flesta nuvarande stävtilläggande fartyg väger cirka 250 ton, vilket har ökat belastningen på bryggan. En renovering är därför nödvändig. Kostnaden är beräknad till cirka 3 MSEK.",
         "En sammanställning över projektets aktiviteter och kontaktytor mot entreprenörer, myndigheter, organisationer och föreningar finns i projektöversikten “Renovering av Nämdö Böte Trafikbrygga”, daterad 2026-04-20.",
       ],
@@ -37,7 +37,7 @@ export const bridgeProject = {
     {
       heading: "Projektgrupp",
       paragraphs: [
-        "Vid årsmötet i Nordöstra Nämdö Samfällighetsförening 2024-08-31 beslutades att renovera Nämdö Böte trafikbrygga. En projektgrupp utsågs på årsmötet för att ta fram en teknisk lösning och finna finansiering för renoveringen. Projektgruppen består av fastighetsägare på Nämdö Böte som arbetar ideellt:",
+        "Vid årsmötet i Nordöstra Nämdös Samfällighetsförening 2024-08-31 beslutades att renovera Nämdö Böte trafikbrygga. En projektgrupp utsågs på årsmötet för att ta fram en teknisk lösning och finna finansiering för renoveringen. Projektgruppen består av fastighetsägare på Nämdö Böte som arbetar ideellt:",
       ],
       items: ["Benny Norling, projektledare", "Peter Kjellman", "Peter Lindström", "Jörgen Carlberg"],
     },

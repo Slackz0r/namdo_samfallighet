@@ -5,7 +5,7 @@ import SiteContainer from "@/components/site-container";
 
 export const metadata: Metadata = {
   title: "Karta",
-  description: "Karta över området som omfattas av Nordöstra Nämdö Samfällighetsförening.",
+  description: "Karta över området som omfattas av Nordöstra Nämdös Samfällighetsförening.",
 };
 
 export default function MapPage() {
@@ -22,7 +22,7 @@ export default function MapPage() {
           <figure className="relative mt-10 aspect-[15/9] overflow-hidden rounded-xl border border-border bg-surface shadow-sm">
             <Image
               src="/images/karta_nordostra_namdo.png"
-              alt="Karta över området för Nordöstra Nämdö Samfällighetsförening."
+              alt="Karta över området för Nordöstra Nämdös Samfällighetsförening."
               fill
               sizes="(min-width: 1200px) 1200px, 100vw"
               className="object-contain"
