@@ -6,8 +6,7 @@ import SiteContainer from "@/components/site-container";
 
 export const metadata: Metadata = {
   title: "Kontakt",
-  description:
-    "Kontakt- och faktureringsuppgifter för Nordöstra Nämdös Samfällighetsförening.",
+  description: "Kontakt- och faktureringsuppgifter för Nordöstra Nämdös Samfällighetsförening.",
 };
 
 export default function ContactPage() {
@@ -46,7 +45,10 @@ export default function ContactPage() {
                 </div>
               </dl>
 
-              <section aria-labelledby="billing-heading" className="mt-8 border-t border-border pt-8">
+              <section
+                aria-labelledby="billing-heading"
+                className="mt-8 border-t border-border pt-8"
+              >
                 <h3 id="billing-heading" className="text-xl font-semibold leading-tight">
                   Fakturering
                 </h3>
@@ -69,7 +71,9 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <dt className="text-sm font-medium text-muted-foreground">Faktureringsadress</dt>
+                    <dt className="text-sm font-medium text-muted-foreground">
+                      Faktureringsadress
+                    </dt>
                     <dd className="mt-1">
                       <a
                         className="font-semibold text-primary hover:underline"
@@ -93,11 +97,76 @@ export default function ContactPage() {
               <InfoCard title="Stadgar" href="/statutes">
                 <p>Föreningens stadgar och kommentarer till stadgarna.</p>
               </InfoCard>
-              <Link className="inline-flex text-sm font-semibold text-primary hover:underline" href="/">
+              <Link
+                className="inline-flex text-sm font-semibold text-primary hover:underline"
+                href="/"
+              >
                 Till startsidan
               </Link>
             </aside>
           </div>
+
+          <section className="mt-6 max-w-3xl rounded-xl border border-border bg-surface p-6 shadow-sm md:p-8">
+            <section aria-labelledby="board-members-heading">
+              <h3 id="board-members-heading" className="text-2xl font-semibold leading-tight">
+                Styrelse
+              </h3>
+              <dl className="mt-4 space-y-4 text-lg leading-7">
+                <div>
+                  <dt className="inline font-semibold">Ordförande</dt>
+                  <dd className="inline"> Jesper Magnusson</dd>
+                </div>
+                <div>
+                  <dt className="inline font-semibold">Kassör</dt>
+                  <dd className="inline"> Anders Asp</dd>
+                </div>
+                <div>
+                  <dt className="inline font-semibold">Sekreterare</dt>
+                  <dd className="inline"> Ulf Häggström</dd>
+                </div>
+                <div>
+                  <dt className="inline font-semibold">Ledamot</dt>
+                  <dd className="inline"> Jon Fjärdhäll</dd>
+                </div>
+                <div>
+                  <dt className="inline font-semibold">Ledamot</dt>
+                  <dd className="inline"> Benny Norling</dd>
+                </div>
+              </dl>
+            </section>
+
+            <section aria-labelledby="other-roles-heading" className="mt-8">
+              <h3 id="other-roles-heading" className="text-2xl font-semibold leading-tight">
+                Övriga
+              </h3>
+              <dl className="mt-4 space-y-4 text-lg leading-7">
+                <div>
+                  <dt className="inline font-semibold">Suppleant</dt>
+                  <dd className="inline"> William Ekekrantz</dd>
+                </div>
+                <div>
+                  <dt className="inline font-semibold">Suppleant</dt>
+                  <dd className="inline"> Helen Saranius</dd>
+                </div>
+                <div>
+                  <dt className="inline font-semibold">Revisor</dt>
+                  <dd className="inline"> Boel Carlsson</dd>
+                </div>
+                <div>
+                  <dt className="inline font-semibold">Revisorsuppleant</dt>
+                  <dd className="inline"> Siw Bernqvist</dd>
+                </div>
+                <div>
+                  <dt className="inline font-semibold">Ordförande, valberedningen</dt>
+                  <dd className="inline"> Jörgen Carlberg</dd>
+                </div>
+                <div>
+                  <dt className="inline font-semibold">Ledamot, valberedningen</dt>
+                  <dd className="inline"> Christina Alewald</dd>
+                </div>
+              </dl>
+            </section>
+          </section>
         </article>
       </SiteContainer>
     </main>
