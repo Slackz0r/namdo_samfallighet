@@ -10,7 +10,11 @@ export default function SiteHeader() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-999 border-b border-border bg-surface/95">
+    <header
+      className={`sticky top-0 z-999 relative bg-surface/95 ${
+        isMenuOpen ? "border-b-0" : "border-b border-border"
+      } md:border-b md:border-border`}
+    >
       <SiteContainer className="py-2">
         <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center justify-between gap-4">
@@ -34,24 +38,24 @@ export default function SiteHeader() {
               aria-controls="site-navigation"
               aria-expanded={isMenuOpen}
               aria-label={isMenuOpen ? "Stäng huvudmeny" : "Öppna huvudmeny"}
-              className="inline-flex h-11 w-11 items-center justify-center rounded-md border border-border text-foreground transition hover:border-primary hover:bg-sky hover:text-primary md:hidden"
+              className="inline-flex h-11 w-11 items-center justify-center overflow-visible rounded-md border border-border text-foreground transition hover:border-primary hover:bg-sky hover:text-primary md:hidden"
               type="button"
               onClick={() => setIsMenuOpen((current) => !current)}
             >
-              <span className="relative h-5 w-6" aria-hidden="true">
+              <span className="relative h-6 w-6 overflow-visible" aria-hidden="true">
                 <span
-                  className={`absolute left-0 top-0 h-0.5 w-6 rounded-full bg-current transition ${
-                    isMenuOpen ? "top-2 rotate-45" : ""
+                  className={`absolute left-0 h-0.5 w-6 rounded-full bg-current transition duration-200 ease-out ${
+                    isMenuOpen ? "top-[11px] rotate-45" : "top-1"
                   }`}
                 />
                 <span
-                  className={`absolute left-0 top-2 h-0.5 w-6 rounded-full bg-current transition ${
+                  className={`absolute left-0 top-[11px] h-0.5 w-6 rounded-full bg-current transition duration-200 ease-out ${
                     isMenuOpen ? "opacity-0" : ""
                   }`}
                 />
                 <span
-                  className={`absolute left-0 top-4 h-0.5 w-6 rounded-full bg-current transition ${
-                    isMenuOpen ? "top-2 -rotate-45" : ""
+                  className={`absolute left-0 h-0.5 w-6 rounded-full bg-current transition duration-200 ease-out ${
+                    isMenuOpen ? "top-[11px] -rotate-45" : "top-[18px]"
                   }`}
                 />
               </span>
@@ -61,9 +65,13 @@ export default function SiteHeader() {
           <nav
             id="site-navigation"
             aria-label="Huvudmeny"
-            className={`${isMenuOpen ? "block" : "hidden"} md:block`}
+            className={`${
+              isMenuOpen
+                ? "visible max-h-96 translate-y-0 opacity-100"
+                : "invisible pointer-events-none max-h-0 -translate-y-2 opacity-0"
+            } absolute inset-x-0 top-[calc(100%-1px)] overflow-hidden border-b border-border bg-surface/95 shadow-sm transition-[max-height,opacity,transform,visibility] duration-200 ease-out md:static md:visible md:max-h-none md:translate-y-0 md:overflow-visible md:border-0 md:bg-transparent md:opacity-100 md:shadow-none`}
           >
-            <ul className="flex flex-col gap-1 border-t border-border pt-3 text-base font-semibold text-muted-foreground md:flex-row md:flex-wrap md:border-t-0 md:pt-0">
+            <ul className="mx-auto flex w-full max-w-(--site-max-width) flex-col gap-1 px-4 py-3 text-base font-semibold text-muted-foreground sm:px-6 md:flex-row md:flex-wrap md:px-0 md:py-0">
               {mainNavigation.map(({ label, href }) => (
                 <li key={href}>
                   <Link
