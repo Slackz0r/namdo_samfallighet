@@ -67,8 +67,8 @@ export default function SiteHeader() {
             aria-label="Huvudmeny"
             className={`${
               isMenuOpen
-                ? "visible max-h-96 translate-y-0 opacity-100"
-                : "invisible pointer-events-none max-h-0 -translate-y-2 opacity-0"
+                ? "visible max-h-96 translate-y-0 opacity-100 "
+                : "invisible max-h-0 -translate-y-2 opacity-0 "
             } absolute inset-x-0 top-[calc(100%-1px)] overflow-hidden border-b border-border bg-surface/95 shadow-sm transition-[max-height,opacity,transform,visibility] duration-200 ease-out md:static md:visible md:max-h-none md:translate-y-0 md:overflow-visible md:border-0 md:bg-transparent md:opacity-100 md:shadow-none`}
           >
             <ul className="mx-auto flex w-full max-w-(--site-max-width) flex-col gap-1 px-4 py-3 text-base font-semibold text-muted-foreground sm:px-6 md:flex-row md:flex-wrap md:px-0 md:py-0">
