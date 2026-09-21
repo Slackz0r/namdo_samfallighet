@@ -17,7 +17,7 @@ export default function ContactPage() {
           <PageHeader
             eyebrow="Kontakt"
             title="Kontakta föreningen"
-            description="För frågor om vägar, bryggor, stadgar eller årsstämma kan medlemmar kontakta styrelsen via de kontaktuppgifter som kommuniceras i kallelser och medlemsutskick."
+            description="För frågor om vägar, bryggor, stadgar eller årsstämma kan medlemmar kontakta styrelsen via föreningens gemensamma e-postadress."
           />
 
           <div className="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
@@ -29,9 +29,16 @@ export default function ContactPage() {
                 För medlemmar och fastighetsägare
               </h2>
               <p className="mt-4 leading-8 text-muted-foreground">
-                För att värna styrelsens privata kontaktuppgifter publiceras inte personliga
-                telefonnummer eller e-postadresser på webbplatsen. Använd i stället de kontaktvägar
-                som anges i senaste kallelse, protokoll eller utskick från styrelsen.
+                För frågor till styrelsen, använd föreningens gemensamma e-postadress. Adressen når
+                samtliga styrelseledamöter.
+              </p>
+              <p className="mt-4">
+                <a
+                  className="text-lg font-semibold text-primary hover:underline"
+                  href="mailto:info@namdovag.se"
+                >
+                  info@namdovag.se
+                </a>
               </p>
 
               <dl className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -50,8 +57,12 @@ export default function ContactPage() {
                 className="mt-8 border-t border-border pt-8"
               >
                 <h3 id="billing-heading" className="text-xl font-semibold leading-tight">
-                  Fakturering
+                  Fakturor till föreningen
                 </h3>
+                <p className="mt-4 leading-8 text-muted-foreground">
+                  Leverantörer som fakturerar Nordöstra Nämdös Samfällighetsförening använder
+                  uppgifterna nedan.
+                </p>
 
                 <dl className="mt-5 space-y-5">
                   <div>

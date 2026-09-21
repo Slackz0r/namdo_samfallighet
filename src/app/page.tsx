@@ -68,14 +68,14 @@ export default function HomePage() {
       </section>
 
       <SiteContainer>
-        <section className="grid gap-8 py-10 md:py-16 lg:grid-cols-[minmax(0,1fr)_360px]">
+        <section className="grid gap-8 py-10 md:py-16 lg:items-start lg:grid-cols-[minmax(0,1fr)_360px]">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-semibold leading-tight">Om föreningen</h2>
             <div className="mt-5 space-y-5 text-base leading-8 text-muted-foreground">
               <p>
                 Nordöstra Nämdös samfällighetsförening etablerades vid en förrättning av
-                Lantmäteriet 1985. Som fastighetsägare är man obligatoriskt ansluten till
-                föreningen och omfattas av föreningens stadgar och årsstämmobeslut.
+                Lantmäteriet 1985. Som fastighetsägare är man obligatoriskt ansluten till föreningen
+                och omfattas av föreningens stadgar och årsstämmobeslut.
               </p>
               <p>
                 Föreningen ansvarar för underhåll, drift och planering av de gemensamma vägarna och
@@ -83,9 +83,40 @@ export default function HomePage() {
                 Lantmäteriet, och kan göra sin röst hörd på årsstämman.
               </p>
             </div>
+
+            <section
+              aria-labelledby="simpleko-heading"
+              className="mt-8 rounded-xl border border-border bg-surface p-6 shadow-sm md:p-8"
+            >
+              <p className="text-sm font-semibold uppercase text-muted-foreground">För medlemmar</p>
+              <h2 id="simpleko-heading" className="mt-2 text-3xl font-semibold leading-tight">
+                Håll dina kontaktuppgifter uppdaterade
+              </h2>
+              <p className="mt-4 leading-8 text-muted-foreground">
+                För att föreningen ska kunna nå dig med viktig information behöver dina
+                kontaktuppgifter vara uppdaterade hos vår förvaltare Simpleko.
+              </p>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a
+                  className="rounded-md bg-primary px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-foreground"
+                  href="https://simpleko.se/"
+                  rel="noreferrer"
+                  style={{ color: "#ffffff" }}
+                  target="_blank"
+                >
+                  Logga in på Simpleko
+                </a>
+                <Link
+                  className="rounded-md border border-primary px-5 py-3 text-sm font-semibold text-primary hover:bg-surface-muted"
+                  href="/information#simpleko"
+                >
+                  Se inloggningsguiden
+                </Link>
+              </div>
+            </section>
           </div>
 
-          <InfoCard className="bg-sky" title="Det här förvaltar föreningen">
+          <InfoCard className="self-start bg-sky" title="Det här förvaltar föreningen">
             <ul className="list-disc space-y-2 pl-5">
               {managedAssets.map((asset) => (
                 <li key={asset}>{asset}</li>
@@ -94,12 +125,13 @@ export default function HomePage() {
           </InfoCard>
         </section>
 
-        <section className="border-t border-border py-10 md:py-16" aria-labelledby="updates-heading">
+        <section
+          className="border-t border-border py-10 md:py-16"
+          aria-labelledby="updates-heading"
+        >
           <div className="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase text-muted-foreground">
-                För medlemmar
-              </p>
+              <p className="text-sm font-semibold uppercase text-muted-foreground">För medlemmar</p>
               <h2 id="updates-heading" className="mt-2 text-3xl font-semibold leading-tight">
                 Senaste informationen
               </h2>

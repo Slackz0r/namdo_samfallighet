@@ -7,7 +7,7 @@ import { residentInformation } from "@/content/resident-information";
 export const metadata: Metadata = {
   title: "Information för boende",
   description:
-    "Praktisk information om sophämtning, grovavfall och boendefrågor för Nordöstra Nämdös Samfällighetsförening.",
+    "Praktisk information om Simpleko, sophämtning, grovavfall och boendefrågor för Nordöstra Nämdös Samfällighetsförening.",
 };
 
 export default function InformationPage() {
@@ -104,6 +104,10 @@ export default function InformationPage() {
                 Snabbt till
               </h2>
 
+              <InfoCard title="Logga in på Simpleko" href="#simpleko">
+                <p>Uppdatera din e-postadress och andra kontaktuppgifter.</p>
+              </InfoCard>
+
               <InfoCard title="Sophämtning" href={`#${waste.id}`}>
                 <p>Hämtningsveckor, Grovsopfärjan och kontaktvägar för avfall.</p>
               </InfoCard>
@@ -133,6 +137,64 @@ export default function InformationPage() {
               </InfoCard>
             </aside>
           </div>
+
+          <section
+            id="simpleko"
+            aria-labelledby="simpleko-heading"
+            className="mt-10 max-w-3xl rounded-xl border border-border bg-surface p-6 shadow-sm scroll-mt-8 md:p-8"
+          >
+            <p className="text-sm font-semibold uppercase text-muted-foreground">För medlemmar</p>
+            <h2 id="simpleko-heading" className="mt-2 text-3xl font-semibold leading-tight">
+              Så här loggar du in på Simpleko – vår förvaltare
+            </h2>
+            <p className="mt-4 leading-8 text-muted-foreground">
+              Registrera och uppdatera gärna din e-postadress i Simplekos portal. Då kan
+              föreningen och förvaltaren enklare nå dig med relevant information.
+            </p>
+
+            <ol className="mt-8 list-decimal space-y-5 pl-6 marker:font-semibold marker:text-primary">
+              <li className="pl-1 leading-8 text-muted-foreground">
+                Gå in på Simplekos hemsida{" "}
+                <a
+                  className="font-semibold text-primary hover:underline"
+                  href="https://simpleko.se/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  simpleko.se
+                </a>{" "}
+                med din dator eller läsplatta.
+              </li>
+              <li className="pl-1 leading-8 text-muted-foreground">
+                Klicka på <strong className="text-foreground">LOGGA IN</strong> i övre, högra
+                hörnet.
+              </li>
+              <li className="pl-1 leading-8 text-muted-foreground">
+                Gå ned till <strong className="text-foreground">PORTALEN</strong> och klicka på
+                <strong className="text-foreground"> Logga in i Portalen</strong>.
+              </li>
+              <li className="pl-1 leading-8 text-muted-foreground">
+                Klicka på <strong className="text-foreground">Nordöstra Nämdös
+                Samfällighetsförening (Medlem)</strong>.
+              </li>
+              <li className="pl-1 leading-8 text-muted-foreground">
+                Gå till övre, högra hörnet där det står ditt namn och Nordöstra Nämdös
+                Samfällighetsförening. Klicka på nedåtpilen ”V” och gå till ”Inställningar”.
+              </li>
+              <li className="pl-1 leading-8 text-muted-foreground">
+                Klicka på <strong className="text-foreground">Kontaktuppgifter</strong>. Fyll i
+                din e-postadress och övriga data.
+              </li>
+              <li className="pl-1 leading-8 text-muted-foreground">
+                Klicka på <strong className="text-foreground">Spara kontaktuppgifterna</strong>{" "}
+                nere till höger. Du får en bekräftelse i ett grönt fält att dina uppgifter
+                sparats.
+              </li>
+              <li className="pl-1 leading-8 text-muted-foreground">
+                Klicka på nedåtpilen uppe till höger och välj sedan ”Logga ut” i listan.
+              </li>
+            </ol>
+          </section>
         </article>
       </SiteContainer>
     </main>
