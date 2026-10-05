@@ -7,8 +7,7 @@ import { formatDate } from "@/utils/dateUtils";
 
 export const metadata: Metadata = {
   title: "Protokoll",
-  description:
-    "Stämmoprotokoll och möteshandlingar för Nordöstra Nämdös Samfällighetsförening.",
+  description: "Stämmoprotokoll och möteshandlingar för Nordöstra Nämdös Samfällighetsförening.",
 };
 
 export default function ProtocolsPage() {
@@ -19,7 +18,7 @@ export default function ProtocolsPage() {
           <PageHeader
             eyebrow="Protokoll"
             title="Stämmoprotokoll"
-            description="Här samlas föreningens protokoll som statiska sidor. Välj ett protokoll för att läsa det i sin helhet."
+            description="Här samlas föreningens stämmoprotokoll. Välj ett protokoll för att öppna det som PDF."
           />
 
           <section aria-labelledby="protocol-list-heading" className="mt-10 max-w-4xl">
@@ -28,14 +27,15 @@ export default function ProtocolsPage() {
             </h2>
 
             <ul className="space-y-4">
-              {meetingProtocols.map((meeting) => (
+              {meetingProtocols.toReversed().map((meeting) => (
                 <li key={meeting.id}>
                   <InfoCard
-                    title={meeting.title}
-                    href={`/protocols/${meeting.id}`}
                     meta={<time dateTime={meeting.date}>{formatDate(meeting.date)}</time>}
+                    title={meeting.title}
+                    href={meeting.pdfUrl}
+                    target="_blank"
                   >
-                    <p>{meeting.protocol.intro}</p>
+                    <p>Öppna protokoll i ny flik (PDF)</p>
                   </InfoCard>
                 </li>
               ))}

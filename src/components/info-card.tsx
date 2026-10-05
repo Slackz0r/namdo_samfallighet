@@ -5,11 +5,19 @@ type InfoCardProps = {
   title: string;
   children: ReactNode;
   href?: string;
+  target?: string;
   meta?: ReactNode;
   className?: string;
 };
 
-export default function InfoCard({ title, children, href, meta, className = "" }: InfoCardProps) {
+export default function InfoCard({
+  title,
+  children,
+  href,
+  target,
+  meta,
+  className = "",
+}: InfoCardProps) {
   const cardClassName = `rounded-xl border border-border bg-surface p-6 shadow-sm ${
     href
       ? "group block transition hover:border-primary hover:bg-surface-muted hover:shadow-small"
@@ -34,13 +42,11 @@ export default function InfoCard({ title, children, href, meta, className = "" }
 
   if (href) {
     return (
-      <Link className={cardClassName} href={href}>
+      <Link className={cardClassName} href={href} target={target}>
         <article>{content}</article>
       </Link>
     );
   }
 
-  return (
-    <article className={cardClassName}>{content}</article>
-  );
+  return <article className={cardClassName}>{content}</article>;
 }
