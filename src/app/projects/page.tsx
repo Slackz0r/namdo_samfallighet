@@ -113,7 +113,7 @@ export default function ProjectsPage() {
                     className="ml-1 font-semibold text-primary hover:underline"
                     href={bridgeProject.roadmap.src}
                   >
-                    Öppna PDF-filen här.
+                    Öppna processöversikten (PDF)
                   </a>
                 </p>
               </object>

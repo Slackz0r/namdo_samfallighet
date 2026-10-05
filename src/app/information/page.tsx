@@ -52,7 +52,10 @@ export default function InformationPage() {
                       key={`${period.label}-${index}`}
                     >
                       <p className="font-semibold">{period.label}</p>
-                      <ul className="flex flex-wrap gap-2" aria-label={`Veckor med ${period.label.toLowerCase()}`}>
+                      <ul
+                        className="flex flex-wrap gap-2"
+                        aria-label={`Veckor med ${period.label.toLowerCase()}`}
+                      >
                         {period.weeks.map((week) => (
                           <li
                             className="rounded-full bg-surface-muted px-3 py-1 text-sm font-medium text-muted-foreground"
@@ -76,7 +79,9 @@ export default function InformationPage() {
                   {waste.bulkyWaste.title}
                 </h3>
                 <p className="mt-4 leading-8 text-muted-foreground">{waste.bulkyWaste.intro}</p>
-                <p className="mt-4 leading-8 text-muted-foreground">{waste.bulkyWaste.ferryIntro}</p>
+                <p className="mt-4 leading-8 text-muted-foreground">
+                  {waste.bulkyWaste.ferryIntro}
+                </p>
 
                 <ul className="mt-5 space-y-4">
                   {waste.bulkyWaste.visits.map((visit) => (
@@ -101,10 +106,10 @@ export default function InformationPage() {
 
             <aside aria-labelledby="information-aside-heading" className="space-y-4">
               <h2 id="information-aside-heading" className="text-xl font-semibold">
-                Snabbt till
+                Genvägar
               </h2>
 
-              <InfoCard title="Logga in på Simpleko" href="#simpleko">
+              <InfoCard title="Så loggar du in på Simpleko" href="#simpleko">
                 <p>Uppdatera din e-postadress och andra kontaktuppgifter.</p>
               </InfoCard>
 
@@ -148,8 +153,8 @@ export default function InformationPage() {
               Så här loggar du in på Simpleko – vår förvaltare
             </h2>
             <p className="mt-4 leading-8 text-muted-foreground">
-              Registrera och uppdatera gärna din e-postadress i Simplekos portal. Då kan
-              föreningen och förvaltaren enklare nå dig med relevant information.
+              Registrera och uppdatera gärna din e-postadress i Simplekos portal. Då kan föreningen
+              och förvaltaren enklare nå dig med relevant information.
             </p>
 
             <ol className="mt-8 list-decimal space-y-5 pl-6 marker:font-semibold marker:text-primary">
@@ -174,21 +179,23 @@ export default function InformationPage() {
                 <strong className="text-foreground"> Logga in i Portalen</strong>.
               </li>
               <li className="pl-1 leading-8 text-muted-foreground">
-                Klicka på <strong className="text-foreground">Nordöstra Nämdös
-                Samfällighetsförening (Medlem)</strong>.
+                Klicka på{" "}
+                <strong className="text-foreground">
+                  Nordöstra Nämdös Samfällighetsförening (Medlem)
+                </strong>
+                .
               </li>
               <li className="pl-1 leading-8 text-muted-foreground">
                 Gå till övre, högra hörnet där det står ditt namn och Nordöstra Nämdös
                 Samfällighetsförening. Klicka på nedåtpilen ”V” och gå till ”Inställningar”.
               </li>
               <li className="pl-1 leading-8 text-muted-foreground">
-                Klicka på <strong className="text-foreground">Kontaktuppgifter</strong>. Fyll i
-                din e-postadress och övriga data.
+                Klicka på <strong className="text-foreground">Kontaktuppgifter</strong>. Fyll i din
+                e-postadress och övriga kontaktuppgifter.
               </li>
               <li className="pl-1 leading-8 text-muted-foreground">
-                Klicka på <strong className="text-foreground">Spara kontaktuppgifterna</strong>{" "}
-                nere till höger. Du får en bekräftelse i ett grönt fält att dina uppgifter
-                sparats.
+                Klicka på <strong className="text-foreground">Spara kontaktuppgifterna</strong> nere
+                till höger. Du får en bekräftelse i ett grönt fält att dina uppgifter sparats.
               </li>
               <li className="pl-1 leading-8 text-muted-foreground">
                 Klicka på nedåtpilen uppe till höger och välj sedan ”Logga ut” i listan.

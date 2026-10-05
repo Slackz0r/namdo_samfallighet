@@ -17,7 +17,7 @@ export default function ContactPage() {
           <PageHeader
             eyebrow="Kontakt"
             title="Kontakta föreningen"
-            description="För frågor om vägar, bryggor, stadgar eller årsstämma kan medlemmar kontakta styrelsen via föreningens gemensamma e-postadress."
+            description="Här hittar du styrelsens kontaktuppgifter och föreningens faktureringsuppgifter."
           />
 
           <div className="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
@@ -43,7 +43,7 @@ export default function ContactPage() {
 
               <dl className="mt-8 grid gap-4 sm:grid-cols-2">
                 <div className="rounded-lg bg-surface-muted p-4">
-                  <dt className="text-sm font-medium text-muted-foreground">Organisation</dt>
+                  <dt className="text-sm font-medium text-muted-foreground">Organisationsnummer</dt>
                   <dd className="mt-1 font-semibold">716418-9107</dd>
                 </div>
                 <div className="rounded-lg bg-surface-muted p-4">
@@ -83,7 +83,7 @@ export default function ContactPage() {
 
                   <div>
                     <dt className="text-sm font-medium text-muted-foreground">
-                      Faktureringsadress
+                      E-post för fakturor
                     </dt>
                     <dd className="mt-1">
                       <a
@@ -100,14 +100,17 @@ export default function ContactPage() {
 
             <aside aria-labelledby="quick-links-heading" className="space-y-4">
               <h2 id="quick-links-heading" className="text-xl font-semibold">
-                Snabbt till
+                Genvägar
               </h2>
+
               <InfoCard title="Aktuella projekt" href="/projects">
                 <p>Information om projektet för Nämdö Böte trafikbrygga.</p>
               </InfoCard>
+
               <InfoCard title="Stadgar" href="/statutes">
                 <p>Föreningens stadgar och kommentarer till stadgarna.</p>
               </InfoCard>
+
               <Link
                 className="inline-flex text-sm font-semibold text-primary hover:underline"
                 href="/"

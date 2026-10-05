@@ -359,9 +359,7 @@ export default function StatutesPage() {
             className="mt-16 max-w-4xl rounded-xl border border-border bg-surface-muted p-6 md:p-8"
           >
             <header className="max-w-3xl">
-              <p className="text-sm font-medium uppercase text-muted-foreground">
-                Bilaga
-              </p>
+              <p className="text-sm font-medium uppercase text-muted-foreground">Bilaga</p>
 
               <h2 id="kommentarer-heading" className="mt-2 text-3xl font-semibold leading-tight">
                 Kommentar till stadgarna

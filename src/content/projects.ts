@@ -13,7 +13,7 @@ export const bridgeProject = {
   eyebrow: "Aktuellt projekt",
   title: "Renovering av Nämdö Böte Trafikbrygga",
   description:
-    "Statusrapport våren 2026 om arbetet med teknisk lösning, finansiering och förrättning för Nämdö Böte trafikbrygga.",
+    "Statusrapport från våren 2026 om renoveringen av Nämdö Böte trafikbrygga. Här beskrivs den föreslagna tekniska lösningen, finansieringen och lantmäteriförrättningen för vägen till bryggan.",
   image: {
     src: "/images/NB W-brygga 2.JPG",
     alt: "Vy från Nämdö Böte brygga över vattnet.",
@@ -21,7 +21,7 @@ export const bridgeProject = {
   roadmap: {
     title: "Processöversikt",
     description:
-      "Översikten visar projektets huvudsakliga steg, kontaktytor, finansieringsspår och planerade väg framåt för renoveringen.",
+      "Översikten visar renoveringens viktigaste steg, vilka aktörer som är inblandade och möjliga sätt att finansiera arbetet.",
     src: "/documents/processoversikt-namdo-bote-trafikbrygga.pdf",
     linkLabel: "Öppna processöversikten som PDF",
   },
@@ -39,7 +39,12 @@ export const bridgeProject = {
       paragraphs: [
         "Vid årsmötet i Nordöstra Nämdös Samfällighetsförening 2024-08-31 beslutades att renovera Nämdö Böte trafikbrygga. En projektgrupp utsågs på årsmötet för att ta fram en teknisk lösning och finna finansiering för renoveringen. Projektgruppen består av fastighetsägare på Nämdö Böte som arbetar ideellt:",
       ],
-      items: ["Benny Norling, projektledare", "Peter Kjellman", "Peter Lindström", "Jörgen Carlberg"],
+      items: [
+        "Benny Norling, projektledare",
+        "Peter Kjellman",
+        "Peter Lindström",
+        "Jörgen Carlberg",
+      ],
     },
     {
       heading: "Teknisk lösning",

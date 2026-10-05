@@ -139,7 +139,7 @@ export default function HomePage() {
           </div>
 
           <ul className="grid gap-4 md:grid-cols-2">
-            {updates.map(({ title, date, href, summary }) => (
+            {updates.toReversed().map(({ title, date, href, summary }) => (
               <li key={title}>
                 <InfoCard
                   title={title}
@@ -161,7 +161,10 @@ export default function HomePage() {
             <p>Se föreningens stadgar och kommentarerna till stadgarna.</p>
           </InfoCard>
           <InfoCard title="Kontakt" href="/contact">
-            <p>Hitta enkel kontaktinformation och hur medlemmar når styrelsen.</p>
+            <p>
+              Hitta styrelsens kontaktuppgifter och uppgifter för att skicka fakturor till
+              föreningen.
+            </p>
           </InfoCard>
         </section>
       </SiteContainer>
